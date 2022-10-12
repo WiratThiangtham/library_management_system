@@ -33,9 +33,10 @@ class SignUpForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: TextFormField(
-              textInputAction: TextInputAction.done,
-              obscureText: true,
+              textInputAction: TextInputAction.next,
+              //obscureText: true,
               cursorColor: kPrimaryColor,
+              onSaved: (username) {},
               decoration: const InputDecoration(
                 hintText: "Enter your username",
                 prefixIcon: Padding(
@@ -48,9 +49,10 @@ class SignUpForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: TextFormField(
-              textInputAction: TextInputAction.done,
+              textInputAction: TextInputAction.next,
               obscureText: true,
               cursorColor: kPrimaryColor,
+              onSaved: (password) {},
               decoration: const InputDecoration(
                 hintText: "Enter your password",
                 prefixIcon: Padding(
@@ -63,7 +65,7 @@ class SignUpForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: TextFormField(
-              textInputAction: TextInputAction.done,
+              textInputAction: TextInputAction.next,
               obscureText: true,
               cursorColor: kPrimaryColor,
               decoration: const InputDecoration(
@@ -79,8 +81,9 @@ class SignUpForm extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: defaultPadding),
             child: TextFormField(
               textInputAction: TextInputAction.done,
-              obscureText: true,
+              //obscureText: true,
               cursorColor: kPrimaryColor,
+              onSaved: (birthDate) {},
               decoration: const InputDecoration(
                 hintText: "Enter your birth date",
                 prefixIcon: Padding(
